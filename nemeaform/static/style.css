@@ -1,0 +1,42 @@
+body{
+	margin:0px;
+	font-family:arial, helvetica
+}
+
+
+.errorlist{
+	display: inline	;
+	color:red;
+	font-size:9px;
+	margin:0;
+	padding:0;
+
+}
+
+.form{
+	margin:10px;
+	width: 30%;
+	float:left;
+	display: block;
+}
+
+
+ul{
+	list-style-type:none;
+}
+
+
+.footer{
+	bottom:0px;
+	position: absolute;
+	color:C5C5C5;
+	background-color:#01243B;
+	width:100%;
+	padding:10px;
+	text-align:	center;
+}
+
+.support{
+	font-size:11px;
+
+}

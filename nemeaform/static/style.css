@@ -13,22 +13,26 @@ body{
 
 }
 
-.form{
-	margin:10px;
-	width: 30%;
-	float:left;
+.form {
+	margin: 50px auto;
+	width: 450px;
 	display: block;
+	clear: both;
 }
 
+.form .two {
+	float: right;
+}
+
+.form .one {
+	float: left;
+}
 
 ul{
 	list-style-type:none;
 }
 
-
-.footer{
-	bottom:0px;
-	position: absolute;
+.header {
 	color:C5C5C5;
 	background-color:#01243B;
 	width:100%;
@@ -36,7 +40,44 @@ ul{
 	text-align:	center;
 }
 
-.support{
-	font-size:11px;
 
+.footer {
+	bottom:0px;
+	position: fixed;
+	color:#C5C5C5;	
+	background-color:#01243B;
+	width:100%;
+	padding:10px;
+	text-align:	center;
+}
+
+.footer a {
+	color: white;
+	text-decoration: none;
+}
+
+.support {
+	font-size:11px;
+}
+
+input, select {
+	border: none;
+	padding: 5px;
+	margin: 5px;
+	width:200px;
+	background: #c5c5c5;
+}
+
+input[type='submit']{
+	margin-top: 25px;
+	background-color:#01243B;
+	color: #C5C5C5;
+}
+
+input[type='submit']:hover{
+	background: #12354C;
+}
+
+.error input{
+	background: #771E10;
 }

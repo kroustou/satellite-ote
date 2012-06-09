@@ -1,6 +1,5 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
-
 from django.db import models
 
 
@@ -9,9 +8,7 @@ SEMESTER_CHOICES = (
     (2, '6o'),
     (3, '8o'),
     (4, u'Επι πτυχείο')
-
 )
-
 
 DIRECTION_CHOICES = (
     (1, 'Διαδυκτιακά και υπολογιστικά συστήματα'),
@@ -29,5 +26,5 @@ class Participation(models.Model):
     home_phone = models.CharField(u'Σταθερό τηλέφωνο', max_length=15)
     mobile_phone = models.CharField(u'Κινήτο τηλέφωνο', max_length=15)
     email = models.EmailField()
-    semester = models.IntegerField(choices=SEMESTER_CHOICES)
-    direction = models.IntegerField(choices=DIRECTION_CHOICES)
+    semester = models.IntegerField(u'Εξάμηνο', choices=SEMESTER_CHOICES)
+    direction = models.IntegerField(u'Κατεύθυνση', choices=DIRECTION_CHOICES)
